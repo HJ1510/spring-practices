@@ -10,5 +10,11 @@ public class HelloController {
 	public String hello() {
 		return "/WEB-INF/views/hello.jsp"; //forward 직접하지 않음!
 	}
+	
+	@RequestMapping("/hello2") //"/helloweb/~" 아님!
+	public String hello(String name, Long no) {
+		System.out.println("name : "+name + "|no : " + no );
+		return "/WEB-INF/views/hello.jsp"; //forward 직접하지 않음!
+	}
 
 }
