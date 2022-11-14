@@ -9,7 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Hello Web!!!</h1>
-<h4>Hello Web~~</h4>
+<h1>Hello ${name }</h1>
 </body>
 </html>
