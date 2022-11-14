@@ -14,6 +14,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HelloController {
+	
+	public void a() {
+	}
 
 	@RequestMapping("/hello") // "/helloweb/~" 아님!
 	public String hello() {
