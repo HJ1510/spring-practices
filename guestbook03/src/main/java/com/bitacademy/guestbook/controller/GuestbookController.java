@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bitacademy.guestbook.repository.GuestbookRepository;
 import com.bitacademy.guestbook.vo.GuestbookVo;
@@ -35,10 +36,19 @@ public class GuestbookController {
 		return "/WEB-INF/views/delete.jsp";
 	}
 
+//	@RequestMapping(value = "/delete", method = RequestMethod.POST)
+//	public String delete(Long no, String password) {
+//		guestbookRepository.deleteByNoAndPassword(no, password);
+//		return "redirect:/";
+//	}
+	
+	
 	@RequestMapping(value = "/delete", method = RequestMethod.POST)
-	public String delete(Long no, String password) {
+	public String delete(@RequestParam(value="no", required=true, defaultValue="")Long no, String password) {
 		guestbookRepository.deleteByNoAndPassword(no, password);
 		return "redirect:/";
 	}
+	
+	// @RequestParam(value="no", required=true, defaultValue="") 연구
 
 }
