@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * !추천
- * 
+ * !추천 
  * @RequestMapping 클래스 + 메소드 맵핑
  *
  */
