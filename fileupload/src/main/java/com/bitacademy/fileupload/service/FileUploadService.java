@@ -17,7 +17,7 @@ public class FileUploadService {
 	private static String RESTORE_PATH = "/mysite-uploads";
 	private static String URL_BASE = "/images";
 
-	public String restore(MultipartFile multipartFile) {
+	public String restore(MultipartFile multipartFile) throws FileUploadServiceException {
 		String url = null;
 		try {
 			if (multipartFile.isEmpty()) {
