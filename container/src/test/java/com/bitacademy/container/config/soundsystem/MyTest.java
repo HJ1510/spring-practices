@@ -1,4 +1,4 @@
-package com.bitacademy.container.user.soundsystem;
+package com.bitacademy.container.config.soundsystem;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
