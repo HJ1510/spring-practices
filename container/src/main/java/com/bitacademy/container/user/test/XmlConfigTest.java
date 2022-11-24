@@ -66,8 +66,16 @@ public class XmlConfigTest {
 		user = ac.getBean("user4",User.class);
 		System.out.println(user);
 		
-		// setter로 초기화 한 bean 가져오기
+		// setter로 초기화 한 bean 가져오기1
 		user = ac.getBean("user5",User.class);
+		System.out.println(user);
+		
+		// setter로 초기화 한 bean 가져오기2(DI)
+		user = ac.getBean("user6",User.class);
+		System.out.println(user);
+		
+		// setter로 초기화 한 bean 가져오기3(Collection 객체(List))
+		user = ac.getBean("user7",User.class);
 		System.out.println(user);
 	}
 

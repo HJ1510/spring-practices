@@ -39,7 +39,29 @@
 		</bean>
 		
 		<!-- DI -->
+		<bean id="friend" class="com.bitacademy.container.user.Friend">
+			<constructor-arg value="김정자" />
+		</bean>
+		<bean id="user6" class="com.bitacademy.container.user.User">
+			<property name="no" value="6" />
+			<property name="name" value="철수" />
+			<property name="friend" ref="friend" /> <!-- ref="friend" <= bean id="friend" -->
+		</bean>
 		
-		
+		<!-- setter 사용하여 collection 객체(List) setting -->
+		<bean id="user7" class="com.bitacademy.container.user.User">
+			<property name="no" value="7" />
+			<property name="name" value="아이언맨" />
+			<property name="friends">
+				<list>
+					<value>스파이더맨</value>
+					<value>헐크</value>
+					<value>캡틴아메리카</value>
+					<value>닥터스트레인지</value>
+					<value>앤트맨</value>
+				</list>
+			</property>
+			
+		</bean>
 		
 </beans>
