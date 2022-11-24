@@ -13,7 +13,7 @@ import com.bitacademy.container.soundsystem.CDPlayer;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = {CDPlayerConfig.class})
-public class CDplayerConfigTest {
+public class CDPlayerConfigTest {
 	
 	@Autowired
 	private CDPlayer cdPlayer;
