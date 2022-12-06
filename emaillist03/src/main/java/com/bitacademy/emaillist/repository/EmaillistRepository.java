@@ -25,7 +25,7 @@ public class EmaillistRepository {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
 
-			String url = "jdbc:mysql://127.0.0.1:3306/webdb?charset=utf8"; 
+			String url = "jdbc:mysql://192.168.0.95:3306/webdb?charset=utf8"; 
 			conn = DriverManager.getConnection(url, "webdb", "webdb");
 
 			stmt = conn.createStatement();
@@ -65,7 +65,7 @@ public class EmaillistRepository {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
 
-			String url = "jdbc:mysql://127.0.0.1:3306/webdb?charset=utf8"; 
+			String url = "jdbc:mysql://192.168.0.95:3306/webdb?charset=utf8"; 
 			conn = DriverManager.getConnection(url, "webdb", "webdb");
 
 			stmt = conn.createStatement();
@@ -105,7 +105,7 @@ public class EmaillistRepository {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
 
-			String url = "jdbc:mysql://127.0.0.1:3306/webdb?charset=utf8";
+			String url = "jdbc:mysql://192.168.0.95:3306/webdb?charset=utf8";
 			conn = DriverManager.getConnection(url, "webdb", "webdb");
 
 			stmt = conn.createStatement();
